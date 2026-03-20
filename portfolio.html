@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jirayu walaipan - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666666;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.95em;
+        }
+
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section */
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 25px;
+            font-weight: 600;
+            color: #000000;
+        }
+
+        /* Personal Information */
+        .personal-info p {
+            margin-bottom: 12px;
+            color: #555555;
+        }
+
+        /* Education */
+        .education-item,
+        .experience-item,
+        .project-item {
+            margin-bottom: 30px;
+        }
+
+        .education-item h3,
+        .experience-item h3,
+        .project-item h3 {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            color: #000000;
+        }
+
+        .education-item .school,
+        .experience-item .company,
+        .project-item .title {
+            font-weight: 600;
+        }
+
+        .degree,
+        .position,
+        .project-type {
+            color: #0066cc;
+            font-size: 0.95em;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            color: #999999;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+
+        .description {
+            color: #555555;
+            font-size: 0.95em;
+        }
+
+        .description ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        .description li {
+            margin-bottom: 5px;
+        }
+
+        /* Skills/Tags */
+        .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #f5f5f5;
+            color: #333333;
+            padding: 4px 12px;
+            border-radius: 3px;
+            font-size: 0.85em;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid #e0e0e0;
+            color: #999999;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header / Personal Information -->
+        <header>
+            <h1>jirayu walaipan</h1>
+            <p class="subtitle">[put your professional title]</p>
+            <div class="contact-info">
+                <span>📧 <a href="mailto:26835410007@sau.ac.th">s6835410007@sau.ac.th</a></span>
+                <span>📱 [put your phone number]</span>
+                <span>📍 [put your location]</span>
+                <span>🔗 <a href="#">[put your LinkedIn URL]</a></span>
+                <span>💻 <a href="#">[put your GitHub URL]</a></span>
+            </div>
+        </header>
+
+        <!-- Section 1: Personal Information -->
+        <section class="personal-info">
+            <h2>About Me</h2>
+            <p>
+                [put a brief description about yourself, your background, and what you're passionate about. 
+                Share your professional goals and what makes you unique as a candidate.]
+            </p>
+        </section>
+
+        <!-- Section 2: Educational Background -->
+        <section class="education">
+            <h2>Education</h2>
+
+            <div class="education-item">
+                <h3 class="school">[put your university/school name]</h3>
+                <p class="degree">[put your degree] in [put your major/field]</p>
+                <p class="date">[put graduation year] | GPA: [put your GPA if applicable]</p>
+                <p class="description">[put any relevant coursework, honors, or achievements]</p>
+            </div>
+
+            <div class="education-item">
+                <h3 class="school">[put another institution name if applicable]</h3>
+                <p class="degree">[put certification/course name]</p>
+                <p class="date">[put date/year completed]</p>
+                <p class="description">[put relevant details about this education]</p>
+            </div>
+        </section>
+
+        <!-- Section 3: Work Experience -->
+        <section class="experience">
+            <h2>Work Experience</h2>
+
+            <div class="experience-item">
+                <h3 class="company">[put your company name]</h3>
+                <p class="position">[put your job position/title]</p>
+                <p class="date">[put start date] - [put end date] | [put location]</p>
+                <p class="description">
+                    [put a brief description of your responsibilities and key achievements, for example:]
+                    <ul>
+                        <li>[put achievement or responsibility 1]</li>
+                        <li>[put achievement or responsibility 2]</li>
+                        <li>[put achievement or responsibility 3]</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="experience-item">
+                <h3 class="company">[put another company name if applicable]</h3>
+                <p class="position">[put job position/title]</p>
+                <p class="date">[put start date] - [put end date]</p>
+                <p class="description">
+                    [put relevant details about this position]
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 4: Projects -->
+        <section class="projects">
+            <h2>Projects</h2>
+
+            <div class="project-item">
+                <h3 class="title">[put project name 1]</h3>
+                <p class="project-type">[put project type: e.g., Web Application / Mobile App / Data Analysis]</p>
+                <p class="description">
+                    [put detailed description of what the project does and your role in it]
+                </p>
+                <div class="tags">
+                    <span class="tag">[put technology 1]</span>
+                    <span class="tag">[put technology 2]</span>
+                    <span class="tag">[put technology 3]</span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h3 class="title">[put project name 2]</h3>
+                <p class="project-type">[put project type]</p>
+                <p class="description">
+                    [put project description]
+                </p>
+                <div class="tags">
+                    <span class="tag">[put technology 1]</span>
+                    <span class="tag">[put technology 2]</span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h3 class="title">[put project name 3]</h3>
+                <p class="project-type">[put project type]</p>
+                <p class="description">
+                    [put project description]
+                </p>
+                <div class="tags">
+                    <span class="tag">[put technology 1]</span>
+                    <span class="tag">[put technology 2]</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 jirayu walaipan. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
